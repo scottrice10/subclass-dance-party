@@ -4,6 +4,8 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
+  background-image:url('http://static.hdw.eweb4.com/media/wallpapers_1920x1200/beaches/1/1/natural-bridges-state-beach-california-beach-hd-wallpaper-1920x1200-7677.jpg');
+  background-repeat: no-repeat;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
