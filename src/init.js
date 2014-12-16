@@ -1,7 +1,17 @@
-$(document).ready(function(){
+$(document).ready(function () {
   window.dancers = [];
 
-  $(".addDancerButton").on("click", function(event){
+  $('body').on('mouseover', 'span.happy', function(event){
+    // IN PROGRESS
+    // var dancer = window.dancers[]
+    MakeDancer.prototype.setPosition( ($("body").height() * Math.random()), ($("body").width() * Math.random()) );
+  });
+
+  $(".lineUpButton").on("click", function(event) {
+    MakeDancer.prototype.lineUp();
+  });
+
+  $(".addDancerButton").on("click", function (event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on index.html. You should only need to make one small change to it.
      * As long as the "data-dancer-maker-function-name" attribute of a
@@ -25,8 +35,11 @@ $(document).ready(function(){
     var dancer = dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      Math.random() * 1000
+      250
+      // Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
   });
+
 });

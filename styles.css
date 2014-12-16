@@ -25,3 +25,14 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.minion{
+  height:100px;
+  width:83px;
+  position:absolute;
+  background-image:url('images/minion-small.jpg');
+}
+.happy{
+  border:10px solid yellow;
+  border-radius:10px;
+  position:absolute;
+}
